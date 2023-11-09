@@ -1,0 +1,10 @@
+<div [class.dark-theme]="darkTheme">
+  <mat-card class="profile-card" *ngIf="user">
+    <mat-card-header>
+      <mat-card-title>Привет, {{ user.name.first }}!</mat-card-title>
+      <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="user.picture.large" alt="Аватар">
+  </mat-card>
+</div>
+
